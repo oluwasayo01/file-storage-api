@@ -17,3 +17,4 @@ class BucketTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Bucketdb.objects.count(), 1)
         self.assertEqual(Bucketdb.objects.get().name, 'The test bucket')
+    
