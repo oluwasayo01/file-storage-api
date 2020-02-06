@@ -20,6 +20,8 @@ jobs:
           name: Running tests
           command: |
             . venv/bin/activate
+            cd filestorage
+            python manage.py test
 
       - store_test_results:
           path: test-results
