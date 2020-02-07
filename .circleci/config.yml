@@ -24,7 +24,6 @@ jobs:
           name: Running tests
           command: |
             . venv/bin/activate
-            python file-storage-api/manage.py test
             python manage.py test
       - store_test_results:
           path: test-results
