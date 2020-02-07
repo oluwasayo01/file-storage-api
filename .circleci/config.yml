@@ -3,6 +3,10 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.7
+      - image: circleci/mongo:latest
+        environment:
+          - MONGODB_USERNAME: "x"
+          - MONGODB_PASSWORD: "x"
     steps:
       - checkout
       - restore_cache:
@@ -21,7 +25,7 @@ jobs:
           command: |
             . venv/bin/activate
             python file-storage-api/manage.py test
-            
+            python manage.py test
       - store_test_results:
           path: test-results
 
