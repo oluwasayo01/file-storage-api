@@ -80,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'django(buckets)',
-        'HOST': 'mongodb+srv://django_app:akin1991@oluwasayo-ckrua.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'django_app',
-        'PASSWORD': 'akin1991',
+#         'HOST': 'mongodb+srv://django_app:akin1991@oluwasayo-ckrua.mongodb.net/test?retryWrites=true&w=majority',
+#         'USER': 'django_app',
+#         'PASSWORD': 'akin1991',
     }
 }
 
